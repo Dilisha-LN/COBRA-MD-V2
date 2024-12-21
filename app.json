@@ -1,0 +1,30 @@
+{
+  "name": "COBRA-MD-V2",
+  "description": "COBRA-MD-V2 Whatsapp bot © ᴄʀᴇᴀᴛᴇᴅ ʙʏ C͜͡OBRA-MD ๛ · · ·",
+  "logo": "https://i.ibb.co/0q2BTZY/1374.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": "public"
+    },  
+    
+    "MONGODB": {
+      "description": "put the your mongodb database url",
+      "required": true,
+      "value": "mongodb+srv://laramd:sadeesha2006@anya.gvsp435.mongodb.net/?retryWrites=true&w=majority&appName=Anya"
+    }
+    
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
